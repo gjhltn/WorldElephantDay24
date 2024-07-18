@@ -7,6 +7,9 @@ export default function Home() {
     <main>
 
       <h1 className={styles.h1}>Hello World</h1>
+      <h1 className={`${styles.h1} ${styles.blue}`}>Hello World</h1>
+      <h1 className={`${styles.h1} ${styles.lightblue}`}>Hello World</h1>
+      <h1 className={`${styles.h1} ${styles.green}`}>Hello World</h1>
     </main>
   );
 }
