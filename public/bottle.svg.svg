@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="96px"
-	 height="237px" viewBox="0 0 96 237" style="enable-background:new 0 0 96 237;" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="94.5px"
+	 height="258.5px" viewBox="0 0 94.5 258.5" style="enable-background:new 0 0 94.5 258.5;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:inline;}
@@ -53,5 +53,7 @@
 		c7.81,0,14.15-6.66,14.15-14.87v-17.9v-68.38H4.57z"/>
 	<path id="fill_x5F_3" class="st6" d="M4.57,97.44v101.46v17.9c0,8.21,6.33,14.87,14.15,14.87h17.03h18.99h17.03
 		c7.81,0,14.15-6.66,14.15-14.87v-17.9V97.44c0-1.88-0.16-3.71-0.45-5.5H5.02C4.73,93.73,4.57,95.56,4.57,97.44z"/>
+	<ellipse class="st17" cx="44.18" cy="229.43" rx="25" ry="24.75"/>
+	<polyline class="st18" points="28.36,228.73 41.93,241.31 58,217.56 	"/>
 </g>
 </svg>

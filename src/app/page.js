@@ -1,9 +1,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import {Bottle} from '@/components/Bottle'
 
 export default function Home() {
   return (
     <main>
+	<Bottle fill={1}/>
+	<Bottle fill={2}/>
+	<Bottle fill={3}/>
+	<Bottle fill={4}/>
+	
  <Image
       src="/reteti.png"
       width={500}
