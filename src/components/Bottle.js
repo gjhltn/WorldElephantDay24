@@ -1,12 +1,19 @@
 import styles from './Bottle.module.css'
+
+const DEFAULT = {
+	WIDTH: 94.5,
+	HEIGHT: 258.5
+}
+
 export const Bottle = ({
-	fill
+	fill,
+	width = DEFAULT.WIDTH,
+	height = DEFAULT.HEIGHT
 }) => <div className={styles.bottle}>
 	<svg 
-		
-		width="96px"
-		height="237px"
-		viewBox="0 0 96 237"
+	 width={width}
+	 height={height}
+	 viewBox="0 0 94.5 258.5"
 		>
 <g>
 <path className={`${styles.outline} ${fill===4 ? styles.fill : ''}`} d="M65.3,66.6c0.05,1.21,0.15,2.42,0.35,3.64c0.02,0.13,0.03,0.26,0.03,0.39
@@ -23,6 +30,13 @@ export const Bottle = ({
 		c7.81,0,14.15-6.66,14.15-14.87v-17.9v-68.38H4.57z"/>
 	<path className={fill===3 ? styles.fill : ''} d="M4.57,97.44v101.46v17.9c0,8.21,6.33,14.87,14.15,14.87h17.03h18.99h17.03
 		c7.81,0,14.15-6.66,14.15-14.87v-17.9V97.44c0-1.88-0.16-3.71-0.45-5.5H5.02C4.73,93.73,4.57,95.56,4.57,97.44z"/>
+		{
+			fill === 4 ? 
+			<>
+			<ellipse className={styles.ellipse} cx="44.18" cy="229.43" rx="25" ry="24.75"/>
+			<polyline className={styles.tick}points="28.36,228.73 41.93,241.31 58,217.56 	"/>
+			</> : null
+		}
 </g>
 </svg>
 </div>

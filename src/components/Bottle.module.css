@@ -10,10 +10,22 @@
 
 .outline,
 .teat {
-	stroke: #fff;
+	stroke: var(--colour-white);
 	stroke-width: 5px;
 }
 
 .fill {
-	fill: #fff;
+	fill: var(--colour-white);
+}
+
+.ellipse {
+	fill: var(--colour-green);
+	stroke: var(--colour-blue);
+	stroke-width: 7px;
+}
+
+.tick {
+	stroke: var(--colour-blue);
+	stroke-width: 7px;
+	stroke-linecap: butt;
 }
