@@ -1,6 +1,8 @@
 /* reset */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 * {
@@ -10,23 +12,33 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
 /* World Elephant Day */
 
 :root {
-    --colour-blue: #183FF4;
-    --colour-blue-light: #54B5F9;
-    --colour-black: #000;
-    --colour-white: #FFF;
-    --colour-green: #81FB4D; 
+  --colour-blue: #183ff4;
+  --colour-blue-light: #54b5f9;
+  --colour-black: #000;
+  --colour-white: #fff;
+  --colour-green: #81fb4d;
 }
 
 body {
@@ -39,6 +51,6 @@ body {
 }
 
 main {
-	width: 80%;
-	margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }

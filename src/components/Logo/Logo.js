@@ -1,4 +1,3 @@
-import styles from './Logo.module.css'
+import styles from "./Logo.module.css";
 
-export const Logo = () =>
-<div>logo</div>
+export const Logo = () => <div>logo</div>;

@@ -1,31 +1,31 @@
 .bottle {
-	display: inline;
+  display: inline;
 }
 
 .bottle svg {
-	fill: none;
-	stroke: none;
-	filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+  fill: none;
+  stroke: none;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
 }
 
 .outline,
 .teat {
-	stroke: var(--colour-white);
-	stroke-width: 5px;
+  stroke: var(--colour-white);
+  stroke-width: 5px;
 }
 
 .fill {
-	fill: var(--colour-white);
+  fill: var(--colour-white);
 }
 
 .ellipse {
-	fill: var(--colour-green);
-	stroke: var(--colour-blue);
-	stroke-width: 7px;
+  fill: var(--colour-green);
+  stroke: var(--colour-blue);
+  stroke-width: 7px;
 }
 
 .tick {
-	stroke: var(--colour-blue);
-	stroke-width: 7px;
-	stroke-linecap: butt;
+  stroke: var(--colour-blue);
+  stroke-width: 7px;
+  stroke-linecap: butt;
 }

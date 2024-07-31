@@ -1,6 +1,5 @@
-
 import "./globals.css";
-import bg from '/public/bg.png'
+import bg from "/public/bg.png";
 
 export const metadata = {
   title: "Create Next App",
@@ -10,15 +9,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-            <head>
+      <head>
         <title>World Elephant Day 2024</title>
         <link rel="stylesheet" href="https://use.typekit.net/keh3fmz.css" />
       </head>
-      <body style={{
-      backgroundImage: `url(${bg.src})`,
-    }}><main>{children}</main></body>
+      <body
+        style={{
+          backgroundImage: `url(${bg.src})`,
+        }}
+      >
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
-
-
