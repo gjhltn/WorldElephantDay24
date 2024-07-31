@@ -12,16 +12,13 @@
   margin: 0;
 }
 
-html,
-body {
-  max-width: 100vw;
-
-}
-
 body {
   background: var(--colour-blue);
   color: var(--colour-white);
-  margin:2rem;
+  padding:2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 
 a {
@@ -32,5 +29,38 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+
+.logo {
+  position: relative;
+  margin:0 auto;
+  h1 {
+  
+    font-family: "cooper-black-std", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    margin-bottom:0.5rem;
+    -webkit-text-stroke-width: 1.4rem;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke fill;
+    filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
+  }
+  .world{
+    position: absolute;
+  }
+  .elephant {
+    font-size: 10rem;
+    transform:rotate(-10deg);
+    transform-origin: center;
+    position: absolute;
+    top: 40px;
+  }
+  .day {
+    position: absolute;
+    top: 190px;
+    left: 460px;
   }
 }
