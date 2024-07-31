@@ -1,3 +1,26 @@
+/* reset */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* World Elephant Day */
+
 :root {
     --colour-blue: #183FF4;
     --colour-blue-light: #54B5F9;
@@ -6,61 +29,16 @@
     --colour-green: #81FB4D; 
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 body {
   background: var(--colour-blue);
-  color: var(--colour-white);
-  padding:2rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  text-align: center;
+  font-family: "cooper-black-std", serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
-
-.logo {
-  position: relative;
-  margin:0 auto;
-  h1 {
-  
-    font-family: "cooper-black-std", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 6rem;
-    margin-bottom:0.5rem;
-    -webkit-text-stroke-width: 1.4rem;
-    -webkit-text-stroke-color: black;
-    paint-order: stroke fill;
-    filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.4));
-  }
-  .world{
-    position: absolute;
-  }
-  .elephant {
-    font-size: 10rem;
-    transform:rotate(-10deg);
-    transform-origin: center;
-    position: absolute;
-    top: 40px;
-  }
-  .day {
-    position: absolute;
-    top: 190px;
-    left: 460px;
-  }
+main {
+	width: 80%;
+	margin: 0 auto;
 }

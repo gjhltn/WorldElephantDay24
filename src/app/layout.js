@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       </head>
       <body style={{
       backgroundImage: `url(${bg.src})`,
-    }}>{children}</body>
+    }}><main>{children}</main></body>
     </html>
   );
 }
