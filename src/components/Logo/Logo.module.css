@@ -1,14 +1,22 @@
 .logo {
+    width: 60vw;
+    margin: 4rem auto;
+    position: relative;
 }
 
-.logo * {
+.year {
+    position: absolute;
+    top:40rem;
+    font-size:20rem;
+    left:0;
+    right:0;
+    color: var(--colour-green);
+    -webkit-text-stroke-width: 3rem;
+}
+.transparent {
+    fill:none;
 }
 
-.world {
-}
-
-.elephant {
-}
-
-.day {
+.fill {
+    fill:var(--colour-blue);
 }

@@ -74,6 +74,7 @@ body {
 	paint-order: stroke fill;
 	filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
 	min-height: 100vh;
+	padding-bottom:10rem;
 }
 
 main {
