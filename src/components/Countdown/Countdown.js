@@ -20,7 +20,7 @@ export const Countdown = ({ jump = true }) => {
 			}, getDelay() + 1000)
 			return () => clearTimeout(timeoutId)
 		}
-	}, [])
+	})
 
 	return (
 		<div className={styles.countdown}>

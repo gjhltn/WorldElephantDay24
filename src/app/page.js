@@ -3,11 +3,11 @@
 import React, { useEffect, useState } from 'react'
 import { CounterAPI } from 'counterapi'
 import { useCookies } from 'react-cookie'
-import { Thanks } from '@/Components/Thanks'
-import { Masthead } from '@/Components/Masthead'
-import { Logo } from '@/Components/Logo'
-import { Countdown } from '@/Components/Countdown'
-import { Milk } from '@/Components/Milk'
+import { Thanks } from '@/components/Thanks'
+import { Masthead } from '@/components/Masthead'
+import { Logo } from '@/components/Logo'
+import { Countdown } from '@/components/Countdown'
+import { Milk } from '@/components/Milk'
 
 const COUNTER_NAMESPACE = 'tpxelephant'
 const COUNTER_NAME = 'milk'
@@ -34,7 +34,7 @@ const Home = () => {
 				setWasCounted(false)
 			})
 		}
-	}, [])
+	})
 
 	return (
 		<main>
