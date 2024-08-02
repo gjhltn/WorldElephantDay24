@@ -7,7 +7,7 @@
 .year {
     position: absolute;
     top:40rem;
-    font-size:20rem;
+    font-size:22rem;
     left:0;
     right:0;
     color: var(--colour-green);

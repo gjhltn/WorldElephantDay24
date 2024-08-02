@@ -11,7 +11,7 @@ import { Milk } from '@/components/Milk'
 
 const COUNTER_NAMESPACE = 'tpxelephant'
 const COUNTER_NAME = 'milk'
-const COOKIE_NAME = 'mycookie'
+const COOKIE_NAME = 'milkdcookie'
 
 const counter = new CounterAPI()
 
@@ -22,6 +22,7 @@ const Home = () => {
 
 	useEffect(() => {
 		if (!cookies[COOKIE_NAME]) {
+			console.log("counter")
 			counter.up(COUNTER_NAMESPACE, COUNTER_NAME).then(res => {
 				setCount(res.Count)
 				setCookie(COOKIE_NAME, true)
@@ -30,11 +31,10 @@ const Home = () => {
 		} else {
 			counter.get(COUNTER_NAMESPACE, COUNTER_NAME).then(res => {
 				setCount(res.Count)
-
 				setWasCounted(false)
 			})
 		}
-	})
+	},[])
 
 	return (
 		<main>

@@ -72,7 +72,7 @@ body {
 	-webkit-text-stroke-width: 1.4rem;
 	-webkit-text-stroke-color: black;
 	paint-order: stroke fill;
-	filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+	filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.8));
 	min-height: 100vh;
 	padding-bottom:10rem;
 }
