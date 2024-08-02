@@ -1,9 +1,23 @@
-.count {
-  font-size: 1rem;
-  color: var(--colour-green);
+.milk {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: var(--colour-blue-light);
+	margin-top: 4rem;
 }
 
-.added {
-  font-size: 1rem;
-  color: var(--colour-blue);
+.text {
+	flex: 1;
+	font-size: 5rem;
+	text-align: left;
+	line-height: 100%;
+}
+
+.count {
+	flex: 0 0 4rem;
+	font-size: 12rem;
+}
+
+.bottles {
+	display: block;
 }

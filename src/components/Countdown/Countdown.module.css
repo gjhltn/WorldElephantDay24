@@ -1,4 +1,23 @@
 .digit {
-  color: var(--colour-white);
-  font-size: 18rem;
+}
+
+.countdown {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: var(--colour-blue-light);
+	margin-top: 4rem;
+}
+
+.text {
+	flex: 1;
+
+	font-size: 5rem;
+	text-align: left;
+	line-height: 100%;
+}
+
+.count {
+	flex: 0 0 8rem;
+	font-size: 12rem;
 }

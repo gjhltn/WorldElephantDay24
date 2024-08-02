@@ -3,22 +3,22 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 * {
-  margin: 0;
+	margin: 0;
 }
 body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
 }
 img,
 picture,
 video,
 canvas,
 svg {
-  display: block;
-  max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 
 p,
@@ -28,29 +28,55 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
+	overflow-wrap: break-word;
 }
 
 /* World Elephant Day */
 
 :root {
-  --colour-blue: #183ff4;
-  --colour-blue-light: #54b5f9;
-  --colour-black: #000;
-  --colour-white: #fff;
-  --colour-green: #81fb4d;
+	--colour-blue: #183ff4;
+	--colour-blue-light: #54b5f9;
+	--colour-black: #000;
+	--colour-white: #fff;
+	--colour-green: #81fb4d;
+}
+
+html {
+	font-size: 1vw;
 }
 
 body {
-  background: var(--colour-blue);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  text-align: center;
-  font-family: "cooper-black-std", serif;
+	font-size: $font-base;
+}
+
+h1 {
+	font-size: $font-h1;
+}
+
+h2 {
+	font-size: $font-h2;
+}
+
+h3 {
+	font-size: $font-h3;
+}
+
+body {
+	background: var(--colour-blue);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	text-align: center;
+	font-family: 'cooper-black-std', serif;
+	padding-bottom: 5rem;
+	-webkit-text-stroke-width: 1.4rem;
+	-webkit-text-stroke-color: black;
+	paint-order: stroke fill;
+	filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
 }
 
 main {
-  width: 80%;
-  margin: 0 auto;
+	width: 90vw;
+	margin: 0 auto;
+	position: relative;
 }

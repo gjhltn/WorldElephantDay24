@@ -1,0 +1,12 @@
+.thanks h1 {
+	font-size: 11rem;
+	color: var(--colour-white);
+	line-height: 1;
+}
+
+.thanks h2 {
+	margin-top: 2rem;
+	font-size: 5rem;
+	color: var(--colour-white);
+	line-height: 1;
+}

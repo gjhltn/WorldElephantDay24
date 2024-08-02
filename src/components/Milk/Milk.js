@@ -1,50 +1,22 @@
-"use client";
+import styles from './Milk.module.css'
 
-import React, { useEffect, useState } from "react";
-import { CounterAPI } from "counterapi";
-import { useCookies } from "react-cookie";
-import styles from "./Milk.module.css";
+export const Milk = ({ count }) => {
+	// 1 bottle = 4 litles = USD 10
+	// 0.25 litres = $1.25 = £1
+	// £250  = 320 usd
 
-const COUNTER_NAMESPACE = "tpxelephant";
-const COUNTER_NAME = "milk";
-const COOKIE_NAME = "mycookie";
+	const num_bottles = Math.floor(count / 8 + 32)
 
-const counter = new CounterAPI();
-
-export const Milk = () => {
-  const [count, setCount] = useState(null);
-  const [cookies, setCookie] = useCookies([COOKIE_NAME]);
-  const [wasCounted, setWasCounted] = useState();
-
-  useEffect(() => {
-    if (!cookies[COOKIE_NAME]) {
-      counter.up(COUNTER_NAMESPACE, COUNTER_NAME).then((res) => {
-        setCount(res.Count);
-        setCookie(COOKIE_NAME, true);
-        setWasCounted(true);
-      });
-    } else {
-      console.log("looks like you have already visited");
-      counter.get(COUNTER_NAMESPACE, COUNTER_NAME).then((res) => {
-        setCount(res.Count);
-
-        setWasCounted(false);
-      });
-    }
-  }, []);
-
-  return (
-    count && (
-      <div>
-        {wasCounted && <Thanks />}
-        <span className={styles.count}>{count}</span>
-      </div>
-    )
-  );
-};
-
-const Thanks = () => (
-  <div className={styles.added}>
-    Thank you! Half a litre of milk will be donated for you.
-  </div>
-);
+	return (
+		<div className={styles.milk}>
+			<div className={styles.text}>
+				Bottles of milk filled
+				<br />
+				so far today:
+			</div>
+			<div className={styles.count}>
+				<span className={styles.bottles}>{num_bottles}</span>
+			</div>
+		</div>
+	)
+}
