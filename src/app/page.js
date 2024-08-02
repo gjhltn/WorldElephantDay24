@@ -22,7 +22,7 @@ const Home = () => {
 
 	useEffect(() => {
 		if (!cookies[COOKIE_NAME]) {
-			console.log("counter")
+			console.log('counter')
 			counter.up(COUNTER_NAMESPACE, COUNTER_NAME).then(res => {
 				setCount(res.Count)
 				setCookie(COOKIE_NAME, true)
@@ -34,14 +34,14 @@ const Home = () => {
 				setWasCounted(false)
 			})
 		}
-	},[])
+	}, [])
 
 	return (
 		<main>
 			<Masthead />
 			<Logo />
 			{wasCounted && <Thanks />}
-			<Countdown jump={false}/>
+			<Countdown jump={true} />
 			<Milk count={count} />
 		</main>
 	)

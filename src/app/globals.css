@@ -35,7 +35,7 @@ h6 {
 
 :root {
 	--colour-blue: #183ff4;
-	--colour-blue-light: #03B9FE;
+	--colour-blue-light: #03b9fe;
 	--colour-black: #000;
 	--colour-white: #fff;
 	--colour-green: #81fb4d;
@@ -74,7 +74,7 @@ body {
 	paint-order: stroke fill;
 	filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.8));
 	min-height: 100vh;
-	padding-bottom:10rem;
+	padding-bottom: 10rem;
 }
 
 main {

@@ -1,22 +1,22 @@
 .logo {
-    width: 60vw;
-    margin: 4rem auto;
-    position: relative;
+	width: 60vw;
+	margin: 4rem auto;
+	position: relative;
 }
 
 .year {
-    position: absolute;
-    top:40rem;
-    font-size:22rem;
-    left:0;
-    right:0;
-    color: var(--colour-green);
-    -webkit-text-stroke-width: 3rem;
+	position: absolute;
+	top: 40rem;
+	font-size: 22rem;
+	left: 0;
+	right: 0;
+	color: var(--colour-green);
+	-webkit-text-stroke-width: 3rem;
 }
 .transparent {
-    fill:none;
+	fill: none;
 }
 
 .fill {
-    fill:var(--colour-blue);
+	fill: var(--colour-blue);
 }
