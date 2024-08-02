@@ -21,3 +21,7 @@
 .bottles {
 	display: block;
 }
+
+.bottles > * {
+	float: left;
+}

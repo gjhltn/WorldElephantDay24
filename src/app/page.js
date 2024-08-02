@@ -41,7 +41,7 @@ const Home = () => {
 			<Masthead />
 			<Logo />
 			{wasCounted && <Thanks />}
-			<Countdown />
+			<Countdown jump={false}/>
 			<Milk count={count} />
 		</main>
 	)
