@@ -6,7 +6,9 @@ export const Milk = ({ count }) => {
 	// 0.25 litres = $1.25 = £1
 	// £250  = 320 usd
 
-	const num_bottles = Math.floor(count / 8 + 32)
+	// const num_bottles = Math.floor(count / 8 + 32)
+	
+	const num_bottles = Math.floor(count / 4 + 32)
 
 	return (
 		<>
@@ -34,6 +36,19 @@ export const Milk = ({ count }) => {
 }
 
 const Remainder = ({ count }) => {
+	const num_bottles = Math.floor(count / 4)
+	const remainder = count - num_bottles * 4
+	if (!remainder) return
+	const fill = Math.floor(remainder)
+	return (
+		<div>
+			<Bottle fill={fill} />
+		</div>
+	)
+}
+
+/*
+const Remainder = ({ count }) => {
 	const num_bottles = Math.floor(count / 8)
 	const remainder = count - num_bottles * 8
 	if (!remainder) return
@@ -43,4 +58,4 @@ const Remainder = ({ count }) => {
 			<Bottle fill={fill} />
 		</div>
 	)
-}
+} */
