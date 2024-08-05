@@ -38,6 +38,9 @@ const Home = () => {
 
 	return (
 		<main>
+			<noscript>
+				Sorry, tnis needs JavaScript to 
+			</noscript>
 			<Masthead />
 			<Logo />
 			{wasCounted && <Thanks />}

@@ -1,6 +1,7 @@
 .unique {
 	font-size:2rem;
 	color: var(--colour-blue);
+	clear: both;
 }
 
 .milk {
