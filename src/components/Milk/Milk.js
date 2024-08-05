@@ -31,6 +31,9 @@ export const Milk = ({ count }) => {
 					</div>
 				))}
 			</div>
+			<div className={styles.unique}>
+			{count} unique visitors
+			</div>
 		</>
 	)
 }
