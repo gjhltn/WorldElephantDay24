@@ -39,7 +39,7 @@ const Home = () => {
 	return (
 		<main>
 			<noscript>
-				Sorry, tnis needs JavaScript to 
+				Sorry, tnis needs JavaScript to work!
 			</noscript>
 			<Masthead />
 			<Logo />
