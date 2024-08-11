@@ -9,9 +9,9 @@ import { Logo } from '@/components/Logo'
 import { Countdown } from '@/components/Countdown'
 import { Milk } from '@/components/Milk'
 
-const COUNTER_NAMESPACE = 'tpxelephant'
-const COUNTER_NAME = 'milk'
-const COOKIE_NAME = 'milkdcookie'
+const COUNTER_NAMESPACE = 'tpxelephant24'
+const COUNTER_NAME = 'milk24'
+const COOKIE_NAME = 'wed2024'
 
 const counter = new CounterAPI()
 
